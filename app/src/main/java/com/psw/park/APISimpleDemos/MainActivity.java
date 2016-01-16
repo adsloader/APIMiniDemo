@@ -34,7 +34,7 @@ import java.util.ArrayList;
 * */
 public class MainActivity extends AppCompatActivity {
     ListView lstMain = null;
-    ArrayList lst    =  new <String>ArrayList();;
+    ArrayList lst    =  new <String>ArrayList();
 
     ArrayAdapter adapter = null;
 
@@ -346,7 +346,7 @@ public class MainActivity extends AppCompatActivity {
         handler.sendEmptyMessage(0);
     }
 
-    // AsyncTask 예제 -> 비동기호출(긴작업: UI 액세스처리 불가!!!!!)
+    // AsyncTask 예제 -> 비동기호출(긴작업: UI 액세스처리 생각보다 까다로움)
     // 심지어 Activity가 종료되어도 실행됨
     private void doAsyncTaskExample() {
         new LongWork().execute();
